@@ -7,6 +7,7 @@ import scipy.ndimage as ndi
 
 # Imagen a analizar
 image = cv2.imread('./Imagenes/resonancia0.jpg', cv2.IMREAD_GRAYSCALE)
+
 filtro= cv2.GaussianBlur(image,(5, 5), 2)
 mask = filtro > 150
 
